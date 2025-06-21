@@ -45,7 +45,38 @@
   color: transparent;
 }
 
-
 .card.front {
   background-color: #f0f0f0;
+}
+
+/* スマホ・タブレット向け */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100vw;
+    padding: 0 5vw;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 22vw); /* 3列にして幅を可変に */
+    gap: 4vw 3vw;
+  }
+  .card {
+    width: 22vw;
+    height: 32vw;
+    font-size: 7vw;
+  }
+  .reset-button {
+    font-size: 10vw;
+  }
+}
+
+/* さらに狭い画面（縦長スマホ） */
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: repeat(2, 40vw);
+  }
+  .card {
+    width: 40vw;
+    height: 60vw;
+    font-size: 10vw;
+  }
 }
