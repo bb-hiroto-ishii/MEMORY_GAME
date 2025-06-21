@@ -1,0 +1,41 @@
+:root {
+  font-weight: 400;
+  color: #c8c8c8;
+  background-color: #781e1e;
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+header {
+  border: gray 1px solid;
+  padding: 0 1em;
+  height: 100px;
+  width: 100%;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+ 
+
+button {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  border: none;
+  text-align: center;
+}
