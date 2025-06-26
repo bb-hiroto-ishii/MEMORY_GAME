@@ -6,7 +6,7 @@ const images = import.meta.glob('/src/assets/monsters/*.jpg', { eager: true }) a
 const icons = Object.values(images).map((mod) => mod.default);
 
 const createShuffledCards = () => {
-  const cardTypes = icons.sort(() => Math.random() - 0.5).slice(0, 6); // 6種類のカードをランダムに選出
+  const cardTypes = icons.sort(() => Math.random() - 0.5).slice(0, 8); // 6種類のカードをランダムに選出
   const shuffled = [...cardTypes, ...cardTypes].sort(() => Math.random() - 0.5);
   return shuffled.map((icon, index) => ({
     id: index,
@@ -23,7 +23,7 @@ function App() {
       img.src = src;
     });
   }, []);
-  
+
   const [cards, setCards] = useState(createShuffledCards());
   const [selected, setSelected] = useState<number[]>([]);
 

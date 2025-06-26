@@ -78,7 +78,7 @@
     height: auto;
   }
   .grid {
-    grid-template-columns: repeat(3, 18vw); /* 3列にして幅を可変に */
+    grid-template-columns: repeat(4, 18vw); /* 3列にして幅を可変に */
     gap: 4vw 3vw;
   }
   .card {
