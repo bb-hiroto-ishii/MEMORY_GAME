@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import './App.css';
 
-const icons = ['🍎', '🍇', '🍓', '🍋', '🥝', '🍌'];
+// const icons = ['🍎', '🍇', '🍓', '🍋', '🥝', '🍌'];
+const images = import.meta.glob('/src/assets/monsters/*.jpg', { eager: true }) as Record<string, { default: string }>;
+
+const icons = Object.values(images).map((mod) => mod.default);
 
 const createShuffledCards = () => {
-  const shuffled = [...icons, ...icons].sort(() => Math.random() - 0.5);
+  const cardTypes = icons.sort(() => Math.random() - 0.5).slice(0, 6); // 6種類のカードをランダムに選出
+  const shuffled = [...cardTypes, ...cardTypes].sort(() => Math.random() - 0.5);
   return shuffled.map((icon, index) => ({
     id: index,
     icon,
@@ -69,7 +73,10 @@ function App() {
           disabled={card.matched}
           className={`card ${!card.flipped && !card.matched ? 'back' : 'front'}`}
         >
-          {card.flipped || card.matched ? card.icon : ''}
+          {/* {card.flipped || card.matched ? card.icon : ''} */}
+          {card.flipped || card.matched ? (
+            <img src={card.icon} alt="monster" className='card-image'/>
+          ) : null}
         </button>
       ))}
     </div>

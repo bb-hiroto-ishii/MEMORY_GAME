@@ -19,9 +19,12 @@
   width: 75px;
   height: 105px;
   font-size: 30px;
-  text-align: center;
   background-color: transparent;
   border-radius: 5%;
+  overflow: hidden; /* ← はみ出し防止 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reset-button {
@@ -39,7 +42,7 @@
 
 .card.back {
   /* background-image: url("/cardBack.png"); */
-  background-image: url("/shishimai.jpg");
+  background-image: url("/cardBack.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,6 +51,13 @@
 
 .card.front {
   background-color: #f0f0f0;
+}
+
+.card-image {
+  width: 120%;
+  height: 120%;
+  object-fit: contain;
+  pointer-events: none; /* ← ボタンのクリックを邪魔しない */
 }
 
 /* スマホ・タブレット向け */
