@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
-// const icons = ['🍎', '🍇', '🍓', '🍋', '🥝', '🍌'];
 const images = import.meta.glob('/src/assets/monsters/*.jpg', { eager: true }) as Record<string, { default: string }>;
 
 const icons = Object.values(images).map((mod) => mod.default);
@@ -18,6 +17,13 @@ const createShuffledCards = () => {
 };
 
 function App() {
+  useEffect(() => {
+    icons.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+  
   const [cards, setCards] = useState(createShuffledCards());
   const [selected, setSelected] = useState<number[]>([]);
 
@@ -73,7 +79,6 @@ function App() {
           disabled={card.matched}
           className={`card ${!card.flipped && !card.matched ? 'back' : 'front'}`}
         >
-          {/* {card.flipped || card.matched ? card.icon : ''} */}
           {card.flipped || card.matched ? (
             <img src={card.icon} alt="monster" className='card-image'/>
           ) : null}
