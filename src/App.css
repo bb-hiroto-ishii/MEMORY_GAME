@@ -1,7 +1,7 @@
 .grid {
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(4, 77px);
+  grid-template-columns: repeat(4, 75px);
   gap: 10px 50px;
   margin-top: 30px;
 }
@@ -16,8 +16,8 @@
 }
 
 .card {
-  width: 77px;
-  height: 110px;
+  width: 75px;
+  height: 105px;
   font-size: 30px;
   text-align: center;
   background-color: transparent;
@@ -46,7 +46,32 @@
   color: transparent;
 }
 
-
 .card.front {
   background-color: #f0f0f0;
+}
+
+/* スマホ・タブレット向け */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100vw;
+    padding: 0 5vw;
+  }
+  p {
+    display: none;
+  }
+  header {
+    height: auto;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 15vw); /* 3列にして幅を可変に */
+    gap: 4vw 3vw;
+  }
+  .card {
+    width: 15vw;
+    height: 21vw;
+    font-size: 7vw;
+  }
+  .reset-button {
+    font-size: 10vw;
+  }
 }
