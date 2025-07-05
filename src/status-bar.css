@@ -1,0 +1,54 @@
+.status-bar {
+    background-color: #B38600;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 0 10px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .status-row {
+    display: flex;
+    align-items: left;
+    margin-bottom: 8px;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-right: 10px;
+    min-width: 70px;
+    color: black;
+    font-size: 11px;
+  }
+  
+  .point-display {
+    background-color: black;
+    text-align: right;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  
+  .combo-display {
+    background-color: black;
+    display: flex;
+    width: 100%;
+  }
+    
+  .combo-box {
+    flex : 1;
+    height: 20px;
+    border: 1px solid black;
+  }
+  
+  /* 塗られてる（使用中） */
+  .combo-box.filled {
+    background-color: #00CC99;
+  }
+  
+  /* 空欄（未使用） */
+  .combo-box.empty {
+    background-color: #000000; /* グレーなど */
+  }

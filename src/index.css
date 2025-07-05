@@ -1,7 +1,9 @@
 :root {
   font-weight: 400;
   color: #c8c8c8;
-  background-color: #781e1e;
+  background-color: #800020;
+  --card-width: 70px;
+  --card-height: 105px;
 }
 
 html, body {
@@ -12,20 +14,19 @@ html, body {
 }
 
 header {
-  border: gray 1px solid;
   padding: 0 1em;
   height: 100px;
   width: 100%;
 }
 
 .footer {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
 }
 
 
 h1 {
-  font-size: 1.5em;
+  font-size: 0.5em;
   text-align: center;
 }
  
