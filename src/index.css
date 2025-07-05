@@ -1,7 +1,9 @@
 :root {
   font-weight: 400;
   color: #c8c8c8;
-  background-color: #781e1e;
+  background-color: #800020;
+  --card-width: 70px;
+  --card-height: 105px;
 }
 
 html, body {
