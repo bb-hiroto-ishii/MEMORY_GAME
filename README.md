@@ -2,6 +2,11 @@
 
 React + TypeScript を用いて開発した、神経衰弱（メモリーゲーム）アプリです。
 
+## デモプレイ
+以下にアクセスすることで、すぐにデモプレイをお楽しみいただけます。
+
+https://memory-game-three-mauve.vercel.app
+
 ## 技術スタック
 - React
 - TypeScript
@@ -16,11 +21,6 @@ React + TypeScript を用いて開発した、神経衰弱（メモリーゲー�
 
 ## 目的
 ReactとTypeScriptの実践的な学習、及び、webアプリケーションからスマートフォンアプリへの移行に挑戦。
-
-## デモプレイ
-以下にアクセスすることで、すぐにデモプレイをお楽しみいただけます。
-
-https://memory-game-three-mauve.vercel.app
 
 ## 課題
 - 初回アクセス時のスタート画面の実装
