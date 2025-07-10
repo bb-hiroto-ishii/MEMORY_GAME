@@ -15,12 +15,19 @@ React + TypeScript を用いて開発した、神経衰弱（メモリーゲー�
 - シンプルなUIで直感的に遊べるデザイン
 
 ## 目的
-ReactとTypeScriptの実践的な学習。
+ReactとTypeScriptの実践的な学習、及び、webアプリケーションからスマートフォンアプリへの移行に挑戦。
 
 ## デモプレイ
 以下にアクセスすることで、すぐにデモプレイをお楽しみいただけます。
 
 https://memory-game-three-mauve.vercel.app
+
+## 課題
+- 初回アクセス時のスタート画面の実装
+- リザルト画面の実装
+- localStorageを利用してのスコア履歴、ベストスコア表示機能実装
+- 各操作時の視覚効果の追加
+- ルール確認用ポップアップ画面の表示ボタン実装
 
 ## 参考
 https://amix-design.com/tl/tool-c-pattern/
