@@ -22,8 +22,8 @@ ReactとTypeScriptの実践的な学習。
 
 https://memory-game-three-mauve.vercel.app
 
-##　参考
+## 参考
 https://amix-design.com/tl/tool-c-pattern/
 
 ## スペシャルサンクス
-- カードデザイン：妻、友人
+カードデザイン - 妻、友人
