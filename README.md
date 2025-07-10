@@ -1,4 +1,4 @@
-# Memory Game (神経衰弱ゲーム)
+# Memory Game (神経衰弱ゲーム)　ver1.1.0
 
 React + TypeScript を用いて開発した、神経衰弱（メモリーゲーム）アプリです。
 
@@ -24,10 +24,11 @@ https://memory-game-three-mauve.vercel.app
 
 ## 課題
 - 初回アクセス時のスタート画面の実装
-- リザルト画面の実装
+- ~~リザルト画面の実装~~ - ver1.1.0にて実装
 - localStorageを利用してのスコア履歴、ベストスコア表示機能実装
 - 各操作時の視覚効果の追加
-- ルール確認用ポップアップ画面の表示ボタン実装
+- ~~ルール確認用ポップアップ画面の表示ボタン実装~~ - ver1.1.0にて実装
+- 制限時間導入
 
 ## 参考
 https://amix-design.com/tl/tool-c-pattern/
