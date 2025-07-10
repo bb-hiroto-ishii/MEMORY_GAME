@@ -20,3 +20,6 @@ ReactとTypeScriptの実践的な学習。
 以下にアクセスすることで、すぐにデモプレイをお楽しみいただけます。
 
 https://memory-game-three-mauve.vercel.app
+
+## スペシャルサンクス
+- カードデザイン：妻、友人
