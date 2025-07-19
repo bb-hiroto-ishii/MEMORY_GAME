@@ -1,4 +1,4 @@
-# Memory Game (神経衰弱ゲーム)　ver1.1.0
+# Memory Game (神経衰弱ゲーム)　ver1.1.1
 
 React + TypeScript を用いて開発した、神経衰弱（メモリーゲーム）アプリです。
 
